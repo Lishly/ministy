@@ -360,6 +360,220 @@ lake of fire which burns with fire and brimstone.
 
 
 
+    <!-- OBJECTIVES SECTION -->
+    <div class="gods-awe-objectives" id="our-objectives">
+
+      <div class="gods-awe-section-title">
+        <h2>Our Objectives</h2>
+
+        <p class="gods-awe-text">
+          Our mission is to spread the Gospel, strengthen believers,
+          and impact lives through worship, prayer, love, and service.
+        </p>
+      </div>
+
+      <div class="gods-awe-objective-grid">
+
+        <div class="gods-awe-objective-card">
+          <i class="bi bi-heart-fill"></i>
+          <h3>Worship in Spirit & Truth</h3>
+
+          <p>
+            Raising a generation that will worship God in spirit and truth
+            with sincere devotion and commitment to His Word.
+          </p>
+        </div>
+
+        <div class="gods-awe-objective-card">
+          <i class="bi bi-book-fill"></i>
+          <h3>Teaching the Word</h3>
+
+          <p>
+            Equipping believers with Biblical truth for ministry,
+            spiritual growth, and Christian service.
+          </p>
+        </div>
+
+        <div class="gods-awe-objective-card">
+          <i class="bi bi-globe"></i>
+          <h3>Prayer Warriors</h3>
+
+          <p>
+            Creating an army of prayer warriors across the globe
+            dedicated to revival and intercession.
+          </p>
+        </div>
+
+        <div class="gods-awe-objective-card">
+          <i class="bi bi-people-fill"></i>
+          <h3>Fellowship & Love</h3>
+
+          <p>
+            Building a caring Christian community that demonstrates
+            forgiveness, unity, compassion, and genuine love.
+          </p>
+        </div>
+
+        <div class="gods-awe-objective-card">
+          <i class="bi bi-house-heart-fill"></i>
+          <h3>Serving the Needy</h3>
+
+          <p>
+            Caring for the poor, sick, and vulnerable through
+            outreach, hospitality, and acts of kindness.
+          </p>
+        </div>
+
+        <div class="gods-awe-objective-card">
+          <i class="bi bi-stars"></i>
+          <h3>Faith & Perseverance</h3>
+
+          <p>
+            Encouraging believers to remain strong in faith despite
+            challenges and difficult circumstances.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<section class="departments-section">
+  <div class="container">
+    <h2>Our Departments</h2>
+
+    <button class="accordion">1. CHRIST KINGDOM QUEENS MOVEMENT</button>
+    <div class="panel">
+      <p>
+        Women ministry to equip and empower all Christian women to live in God's purpose.
+      </p>
+    </div>
+
+    <button class="accordion">2. FAMILY FOUNDATION</button>
+    <div class="panel">
+      <p>
+       Our objective of building a strong Christian family foundation is to cultivate a Christ-centered home equipped to withstand life's storms, raise resilient children in the faith, and create a generational legacy of love, service, and biblical stewardship.
+
+Deals with the counseling of couples,Mentorship programs,Parenting,Organizing Family events and Seminars.
+      </p>
+    </div>
+
+    <button class="accordion">3. CHRIST LEGACY GENERATION</button>
+    <div class="panel">
+      <p>
+       This is basically the Youth Ministry/ space 
+      </p>
+    </div>
+
+    <button class="accordion">4. MINISTRY INTERCESSORS</button>
+    <div class="panel">
+      <p>
+        A dedicated prayer ministry committed to intercession and spiritual support.
+      </p>
+    </div>
+
+    <button class="accordion">
+      5. REV. JEREMY & TABITHA HEART OF COMPASSION
+    </button>
+    <div class="panel">
+      <p>
+        A ministry serving and supporting the less privileged in society through
+        outreach and acts of compassion.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+.departments-section{
+  padding:80px 20px;
+  background:#0f172a;
+  color:#fff;
+}
+
+.departments-section h2{
+  text-align:center;
+  color:#ffb400;
+  margin-bottom:40px;
+}
+
+.accordion{
+  background:#1e293b;
+  color:white;
+  cursor:pointer;
+  padding:18px;
+  width:100%;
+  border:none;
+  text-align:left;
+  font-size:18px;
+  margin-bottom:5px;
+  border-radius:8px;
+  transition:.3s;
+}
+
+.accordion:hover{
+  background:#334155;
+}
+
+.accordion.active{
+  background:#ffb400;
+  color:#000;
+}
+
+.panel{
+  max-height:0;
+  overflow:hidden;
+  background:white;
+  color:#333;
+  border-radius:0 0 8px 8px;
+  transition:max-height .4s ease;
+  margin-bottom:10px;
+}
+
+.panel p{
+  padding:20px;
+  margin:0;
+  line-height:1.7;
+}
+</style>
+
+<script>
+const accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach(acc => {
+  acc.addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    let panel = this.nextElementSibling;
+
+    if(panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+});
+</script>
+```
+
+
+
+
+
 
 
 
@@ -1313,218 +1527,7 @@ window.addEventListener("click", (e) => {
 });
 
 </script>
-    <!-- OBJECTIVES SECTION -->
-    <div class="gods-awe-objectives" id="our-objectives">
-
-      <div class="gods-awe-section-title">
-        <h2>Our Objectives</h2>
-
-        <p class="gods-awe-text">
-          Our mission is to spread the Gospel, strengthen believers,
-          and impact lives through worship, prayer, love, and service.
-        </p>
-      </div>
-
-      <div class="gods-awe-objective-grid">
-
-        <div class="gods-awe-objective-card">
-          <i class="bi bi-heart-fill"></i>
-          <h3>Worship in Spirit & Truth</h3>
-
-          <p>
-            Raising a generation that will worship God in spirit and truth
-            with sincere devotion and commitment to His Word.
-          </p>
-        </div>
-
-        <div class="gods-awe-objective-card">
-          <i class="bi bi-book-fill"></i>
-          <h3>Teaching the Word</h3>
-
-          <p>
-            Equipping believers with Biblical truth for ministry,
-            spiritual growth, and Christian service.
-          </p>
-        </div>
-
-        <div class="gods-awe-objective-card">
-          <i class="bi bi-globe"></i>
-          <h3>Prayer Warriors</h3>
-
-          <p>
-            Creating an army of prayer warriors across the globe
-            dedicated to revival and intercession.
-          </p>
-        </div>
-
-        <div class="gods-awe-objective-card">
-          <i class="bi bi-people-fill"></i>
-          <h3>Fellowship & Love</h3>
-
-          <p>
-            Building a caring Christian community that demonstrates
-            forgiveness, unity, compassion, and genuine love.
-          </p>
-        </div>
-
-        <div class="gods-awe-objective-card">
-          <i class="bi bi-house-heart-fill"></i>
-          <h3>Serving the Needy</h3>
-
-          <p>
-            Caring for the poor, sick, and vulnerable through
-            outreach, hospitality, and acts of kindness.
-          </p>
-        </div>
-
-        <div class="gods-awe-objective-card">
-          <i class="bi bi-stars"></i>
-          <h3>Faith & Perseverance</h3>
-
-          <p>
-            Encouraging believers to remain strong in faith despite
-            challenges and difficult circumstances.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<section class="departments-section">
-  <div class="container">
-    <h2>Our Departments</h2>
-
-    <button class="accordion">1. CHRIST KINGDOM QUEENS MOVEMENT</button>
-    <div class="panel">
-      <p>
-        Women ministry to equip and empower all Christian women to live in God's purpose.
-      </p>
-    </div>
-
-    <button class="accordion">2. FAMILY FOUNDATION</button>
-    <div class="panel">
-      <p>
-       Our objective of building a strong Christian family foundation is to cultivate a Christ-centered home equipped to withstand life's storms, raise resilient children in the faith, and create a generational legacy of love, service, and biblical stewardship.
-
-Deals with the counseling of couples,Mentorship programs,Parenting,Organizing Family events and Seminars.
-      </p>
-    </div>
-
-    <button class="accordion">3. CHRIST LEGACY GENERATION</button>
-    <div class="panel">
-      <p>
-       This is basically the Youth Ministry/ space 
-      </p>
-    </div>
-
-    <button class="accordion">4. MINISTRY INTERCESSORS</button>
-    <div class="panel">
-      <p>
-        A dedicated prayer ministry committed to intercession and spiritual support.
-      </p>
-    </div>
-
-    <button class="accordion">
-      5. REV. JEREMY & TABITHA HEART OF COMPASSION
-    </button>
-    <div class="panel">
-      <p>
-        A ministry serving and supporting the less privileged in society through
-        outreach and acts of compassion.
-      </p>
-    </div>
-  </div>
-</section>
-
-<style>
-.departments-section{
-  padding:80px 20px;
-  background:#0f172a;
-  color:#fff;
-}
-
-.departments-section h2{
-  text-align:center;
-  color:#ffb400;
-  margin-bottom:40px;
-}
-
-.accordion{
-  background:#1e293b;
-  color:white;
-  cursor:pointer;
-  padding:18px;
-  width:100%;
-  border:none;
-  text-align:left;
-  font-size:18px;
-  margin-bottom:5px;
-  border-radius:8px;
-  transition:.3s;
-}
-
-.accordion:hover{
-  background:#334155;
-}
-
-.accordion.active{
-  background:#ffb400;
-  color:#000;
-}
-
-.panel{
-  max-height:0;
-  overflow:hidden;
-  background:white;
-  color:#333;
-  border-radius:0 0 8px 8px;
-  transition:max-height .4s ease;
-  margin-bottom:10px;
-}
-
-.panel p{
-  padding:20px;
-  margin:0;
-  line-height:1.7;
-}
-</style>
-
-<script>
-const accordions = document.querySelectorAll(".accordion");
-
-accordions.forEach(acc => {
-  acc.addEventListener("click", function() {
-    this.classList.toggle("active");
-
-    let panel = this.nextElementSibling;
-
-    if(panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-});
-</script>
-```
-
-
-
+  
 
 
 
