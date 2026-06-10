@@ -1237,7 +1237,7 @@ dallas: {
   pastor: "Pastor Michael Smith",
   program: "Sunday Celebration - 11:00 AM\nBible Study - Tuesday 7:00 PM",
   phone: "+254 119588623",
-  website: "https://www.theexaltationcenter.org/"
+ 
 }
 
 };
@@ -1252,8 +1252,6 @@ const campusPastor = document.getElementById("campusPastor");
 const campusProgram = document.getElementById("campusProgram");
 const campusPhone = document.getElementById("campusPhone");
 
-const campusWebsite = document.getElementById("campusWebsite");
-const websiteSection = document.getElementById("websiteSection");
 
 document.querySelectorAll(".gods-awe-campus-card")
 .forEach(card => {
@@ -1269,16 +1267,7 @@ document.querySelectorAll(".gods-awe-campus-card")
     campusProgram.innerText = data.program;
     campusPhone.innerText = data.phone;
 
-    // ✅ RESET WEBSITE SECTION FIRST
-    websiteSection.style.display = "none";
-    campusWebsite.href = "#";
-
-    // ✅ SHOW ONLY IF WEBSITE EXISTS (Dallas only)
-    if (data.website) {
-        campusWebsite.href = data.website;
-        campusWebsite.innerText = "Click to Open Campus Website";
-        websiteSection.style.display = "block";
-    }
+   
 
     modal.classList.add("active");
 
@@ -1286,7 +1275,7 @@ document.querySelectorAll(".gods-awe-campus-card")
 
 });
 
-  
+
 
 closeModal.addEventListener("click", () => {
   modal.classList.remove("active");
