@@ -1231,19 +1231,17 @@ const campusData = {
     program: "Sunday Service - 10:00 AM\nYouth Service - Saturday 3:00 PM",
     phone: "+254 119588621"
   },
-
-  dallas: {
-    name: "God’s Awe Worship Center Dallas",
-    image: "assets/img/img1.jpg",
-    pastor: "Pastor Michael Smith",
-    program: "Sunday Celebration - 11:00 AM\nBible Study - Tuesday 7:00 PM",
-    phone: "+254 119588623"
-      <a href="https://www.theexaltationcenter.org/" target="_blank">
-    Click here to open link
-  </a>
-  }
+dallas: {
+  name: "God’s Awe Worship Center Dallas",
+  image: "assets/img/img1.jpg",
+  pastor: "Pastor Michael Smith",
+  program: "Sunday Celebration - 11:00 AM\nBible Study - Tuesday 7:00 PM",
+  phone: "+254 119588623",
+  website: "https://www.theexaltationcenter.org/"
+}
 
 };
+
 
 const modal = document.getElementById("campusModal");
 const closeModal = document.getElementById("closeModal");
@@ -1253,6 +1251,9 @@ const campusName = document.getElementById("campusName");
 const campusPastor = document.getElementById("campusPastor");
 const campusProgram = document.getElementById("campusProgram");
 const campusPhone = document.getElementById("campusPhone");
+
+const campusWebsite = document.getElementById("campusWebsite");
+const websiteSection = document.getElementById("websiteSection");
 
 document.querySelectorAll(".gods-awe-campus-card")
 .forEach(card => {
@@ -1268,11 +1269,24 @@ document.querySelectorAll(".gods-awe-campus-card")
     campusProgram.innerText = data.program;
     campusPhone.innerText = data.phone;
 
+    // ✅ RESET WEBSITE SECTION FIRST
+    websiteSection.style.display = "none";
+    campusWebsite.href = "#";
+
+    // ✅ SHOW ONLY IF WEBSITE EXISTS (Dallas only)
+    if (data.website) {
+        campusWebsite.href = data.website;
+        campusWebsite.innerText = "Click to Open Campus Website";
+        websiteSection.style.display = "block";
+    }
+
     modal.classList.add("active");
 
   });
 
 });
+
+  
 
 closeModal.addEventListener("click", () => {
   modal.classList.remove("active");
@@ -1345,7 +1359,7 @@ From that humble beginning, the ministry has grown and developed in diverse ways
 
       
 
-<div id="Core values" class="corevalues section>
+<div id="core-values" class="corevalues section">
   <style>
 
 /* =========================
@@ -1457,7 +1471,7 @@ From that humble beginning, the ministry has grown and developed in diverse ways
 
 <!-- CHURCH RESOURCES SECTION -->
 
-<section class="church section" id="Events">
+<section class="church section" id="events">
 <style>
 body{
     font-family: Arial, sans-serif;
